@@ -40,7 +40,7 @@ const Scoreboard: React.FC<IShowMoveIconProps> = (props) => {
             <div className="wins__counter">
                 <h2>{props.playerWins} : {props.computerWins}</h2>
                 <div className="vs__img">
-                    <img src={props.drawGame ? drawImg : vsGame} alt="" />
+                    <img src={props.drawGame ? drawImg : vsGame} alt="draw-icon" />
                 </div>
             </div>
             <div className={`computer__move ${props.computerHighlight ? 'move__img' : ''}`}>
