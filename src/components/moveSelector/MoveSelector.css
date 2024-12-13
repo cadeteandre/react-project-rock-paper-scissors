@@ -1,0 +1,25 @@
+.move__selector {
+    text-align: center;
+}
+
+.move__options {
+    display: flex;
+    gap: 20px;
+}
+
+.move__img {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 80px;
+}
+
+.move__img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.move__img img:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(75, 0, 130, 0.6), -3px -3px 5px rgba(0, 191, 255, 0.5);
+}

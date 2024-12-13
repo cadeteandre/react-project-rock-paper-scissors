@@ -1,0 +1,40 @@
+body {
+    background-color: #D1C4E9;
+    color: #333333;
+}
+
+img {
+    width: 18vw;
+    max-width: 200px;
+    border-radius: 50px;
+}
+
+button {
+    background-color: #B39DDB; 
+    color: #FFFFFF; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 3px 3px 5px rgba(100, 60, 200, 0.5), -3px -3px 5px rgba(255, 200, 255, 0.5); /* Sombra sutil para profundidade */
+    cursor: pointer; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1); 
+    box-shadow: 3px 3px 10px rgba(100, 60, 200, 0.7), -3px -3px 10px rgba(255, 200, 255, 0.7); /* Sombra mais intensa no hover */
+}
+
+button:active {
+    transform: scale(1.05); 
+    box-shadow: inset 2px 2px 5px rgba(100, 60, 200, 0.5), inset -2px -2px 5px rgba(255, 200, 255, 0.5); /* Sombra interna */
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
