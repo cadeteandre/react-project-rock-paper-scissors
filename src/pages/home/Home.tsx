@@ -8,7 +8,7 @@ const Home = () => {
     const [computerMove, setComputerMove] = useState<string>('');
     const [playerWins, setPlayerWins] = useState<number>(0);
     const [computerWins, setComputerWins] = useState<number>(0);
-    const [drawGame, setDrawGame] = useState<string>('');
+    const [drawGame, setDrawGame] = useState<boolean>(false);
     const [playerHighlight, setPlayerHighlight] = useState<boolean>(false);
     const [computerHighlight, setComputerHighlight] = useState<boolean>(false);
 

@@ -18,7 +18,7 @@ const MoveSelector: React.FC<IMoveSelectorProps> = (props) => {
             case playerMove === 'paper' && computerMove === 'scissors':
             case playerMove === 'scissors' && computerMove === 'rock':
                 props.setComputerWins(props.computerWins + 1);
-                props.setDrawGame('');
+                props.setDrawGame(false);
                 props.setComputerHighlight(true);
                 props.setPlayerHighlight(false);
                 break;
@@ -26,12 +26,12 @@ const MoveSelector: React.FC<IMoveSelectorProps> = (props) => {
             case playerMove === 'paper' && computerMove ==='rock':
             case playerMove === 'scissors' && computerMove ==='paper':
                 props.setPlayerWins(props.playerWins + 1);
-                props.setDrawGame('');
+                props.setDrawGame(false);
                 props.setPlayerHighlight(true);
                 props.setComputerHighlight(false);
                 break;
             default: 
-                props.setDrawGame('Draw!');
+                props.setDrawGame(true);
                 props.setPlayerHighlight(false);
                 props.setComputerHighlight(false);
         }
